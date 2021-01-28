@@ -12,8 +12,8 @@
 html {
     background: #000000;
     color: #ffffff;
-font-size: 18px;
-font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
 }
 
 html, body {
@@ -38,6 +38,7 @@ button {
     padding: 0;
     font: inherit;
     outline: 0;
+    color: inherit;
 }
 button:hover {
     cursor: pointer;
@@ -209,6 +210,7 @@ nav ul > *:last-child {
 
 p {
     max-width: 50ch;
+    margin: 0 auto;
 }
 
 .page-container {
@@ -276,8 +278,8 @@ p {
 }
 
 
- p + p {
-     margin-top: 10px;
+ p {
+     margin-bottom: 10px;
  }
 
  .home-container {
@@ -319,4 +321,14 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.about-container {
+    min-height: 90vh;
+    text-align: center;
+}
+
+.about-container .planets-list .image img {
+    opacity: 0 !important;
+    display: none !important;
 }

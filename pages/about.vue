@@ -1,17 +1,18 @@
 <template>
-  <div class="container">
+  <div class="about-container container">
     <h1>About</h1>
     <p>
+      I made this site to follow this tut:
       <a
         href="https://explorers.netlify.com/learn/get-started-with-nuxt/"
         target="_blank"
-        >Source: Jamstack explorer course</a
+        >Netlify Jamstack Explorers course - Nuxt</a
       >
     </p>
     <div v-if="!show">
       <button @click="showPlanets">Show Planets</button>
     </div>
-    <div v-else>
+    <div v-if="show">
       <LazyPlanetsList />
     </div>
   </div>
