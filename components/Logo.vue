@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <h1>Planet Info</h1>
-  </div>
+  <h1 class="logo">🪐</h1>
 </template>
 <style>
-.NuxtLogo {
+.logo {
   animation: 1s appear;
   margin: auto;
 }

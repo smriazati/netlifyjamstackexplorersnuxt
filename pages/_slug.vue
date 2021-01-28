@@ -1,10 +1,17 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="container page-container">
+    <h1 class="title">{{ planet.title }}</h1>
+    <div class="image">
       <img :src="planet.image" :alt="planet.title" />
-      <h1 class="title">{{ planet.title }}</h1>
-      <h2>Data</h2>
-      <pre>{{ $data.planet }}</pre>
+    </div>
+    <div class="text">
+      <p v-if="planet.description">{{ planet.description }}</p>
+      <p v-if="planet.radius">
+        {{ planet.title }} has a radius of {{ planet.radius }}
+      </p>
+      <p v-if="planet.distanceFromSun">
+        {{ planet.title }} is {{ planet.distanceFromSun }} from the sun
+      </p>
     </div>
     <PlanetsList />
   </div>

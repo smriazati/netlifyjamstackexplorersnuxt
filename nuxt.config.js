@@ -89,7 +89,7 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=WorkSans&display=swap'
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [

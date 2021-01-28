@@ -1,9 +1,6 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <PlanetsList />
-    </div>
+  <div class="container home-container">
+    <PlanetsList />
   </div>
 </template>
 

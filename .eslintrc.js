@@ -42,6 +42,7 @@ module.exports = {
     'no-multi-spaces': 'off',
     'padded-blocks': 'off',
     'one-var': 'off',
-    'vue/comment-directive': 'off'
+    'vue/comment-directive': 'off',
+    'vue/max-attributes-per-line': 'off'
   }
 }

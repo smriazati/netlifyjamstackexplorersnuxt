@@ -8,15 +8,28 @@
         >Source: Jamstack explorer course</a
       >
     </p>
-    <button @click="showPlanets">Show Planets</button>
-    <div v-if="show">
+    <div v-if="!show">
+      <button @click="showPlanets">Show Planets</button>
+    </div>
+    <div v-else>
       <LazyPlanetsList />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      show: false,
+    };
+  },
+  methods: {
+    showPlanets() {
+      this.show = true;
+    },
+  },
+};
 </script>
 
 <style>

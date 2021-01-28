@@ -1,11 +1,14 @@
 <template>
-  <div>
+  <div class="planets-list">
     <p v-if="$fetchState.pending">Fetching planets....</p>
     <p v-else-if="$fetchState.error">Error while fetching planets</p>
     <ul v-else>
       <li v-for="planet in planets" :key="planet.slug">
         <NuxtLink :to="planet.slug">
-          {{ planet.title }}
+          <span class="title">{{ planet.title }}</span>
+          <span class="image"
+            ><img :src="planet.image" :alt="planet.title"
+          /></span>
         </NuxtLink>
       </li>
     </ul>
